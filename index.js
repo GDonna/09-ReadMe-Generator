@@ -1,6 +1,6 @@
 const inquire = require("inquirer");
 const fs = require("fs");
-import generateMarkdown from "./utils/generateMarkdown.js";
+const generateMarkdown = require ("./utils/generateMarkdown.js");
 
 const generateQuestions = [
     {
@@ -71,21 +71,6 @@ function init() {
         .catch((err) => {
             console.log(err);
         })
-};
-
-function licenseBadge(license) {
-    switch (license) {
-        case "MIT":
-            return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]";
-        case "Apache":
-            return "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]";
-        case "GPL":
-            return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]";
-        case "BSD":
-            return "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)]";
-        case "None":
-            return "No license selected.";
-    }
 };
 
 init();
