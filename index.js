@@ -85,7 +85,7 @@ function licenseBadge(license) {
         case "None":
             return "No license selected.";
     }
-
+};
     function generateMarkdown(data) {
         return `
         # ${data.title}
@@ -116,4 +116,4 @@ function licenseBadge(license) {
         `;
     }
 init();
-        }
+        
