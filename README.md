@@ -1,8 +1,11 @@
 
-  # Testing Project
+  # ReadMe Generator
+
   No license selected.  
+
   ## Description
-  This is test #1
+  This is my submission for Chapter 9 ReadMe Generator. 
+
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -10,18 +13,24 @@
   * [Tests](#tests)
   * [License](#license)
   * [Questions](#questions)
+  * 
   ## Installation
-  Install using Test
+  Node.js, Inquirer
+
   ## Usage
   NA
+
   ## Contributing
-  NA
+  VS Code
+
   ## Tests
   NA
+
   ## License
   None
+
   ## Questions
-  If you have any questions, please contact me at test@gmail.com.
+  If you have any questions, please contact me at g.donna120@gmail.com.
  
-  GitHub: [username]()// how to link to github profile?
-  
+  GitHub: [GDonna]() https://github.com/GDonna/09-ReadMe-Generator.git
+  Screencastify: https://watch.screencastify.com/v/djSudajor9ioa5JqoQeb
