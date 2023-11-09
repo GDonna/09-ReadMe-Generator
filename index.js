@@ -1,5 +1,6 @@
 const inquire = require("inquirer");
 const fs = require("fs");
+import generateMarkdown from "./utils/generateMarkdown.js";
 
 const generateQuestions = [
     {
@@ -86,34 +87,6 @@ function licenseBadge(license) {
             return "No license selected.";
     }
 };
-    function generateMarkdown(data) {
-        return `
-        # ${data.title}
-        ${licenseBadge(data.license)}  
-        ## Description
-        ${data.description}
-        ## Table of Contents
-        * [Installation](#installation)
-        * [Usage](#usage)
-        * [Contributing](#contributing)
-        * [Tests](#tests)
-        * [License](#license)
-        * [Questions](#questions)
-        ## Installation
-        ${data.installation}
-        ## Usage
-        ${data.usage}
-        ## Contributing
-        ${data.contributing}
-        ## Tests
-        ${data.tests}
-        ## License
-        ${data.license}
-        ## Questions
-        If you have any questions, please contact me at ${data.email}.
-       
-        GitHub: [${data.github}]()// how to link to github profile?
-        `;
-    }
+
 init();
         
